@@ -1,0 +1,35 @@
+name: CI - Validar e testar projeto
+
+on:
+  push:
+    branches:
+      - main
+      - feat/**
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Verificar ESLint
+        run: npx eslint .
+
+      - name: Verificar Prettier
+        run: npx prettier --check .
+
+      - name: Build do projeto
+        run: npm run build
