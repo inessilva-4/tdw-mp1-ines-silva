@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+//eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { EXAMPLE_PATH, CMS_NAME } from "@/lib/constants";
 
 export const metadata = {
