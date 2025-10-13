@@ -1,0 +1,13 @@
+node_modules
+dist
+build
+.next
+coverage
+package-lock.json
+package.json
+lefthook.yml
+.eslintrc.js
+eslint.config.js
+jest.config.js
+.prettierignore
+.prettierrc

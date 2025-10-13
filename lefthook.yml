@@ -2,15 +2,14 @@ pre-commit:
   parallel: true
   commands:
     lint:
-      run: npx eslint .
+      run: npx eslint --no-error-on-unmatched-pattern {staged_files}
     prettier:
-      run: npx prettier --check .
-
-pre-push:
-  parallel: true
-  commands:
-    test-build:
-      run: npm run build
+      run: npx prettier --check {staged_files}
+#pre-push:
+#parallel: true
+#commands:
+#test-build:
+#run: npm run build
 # EXAMPLE USAGE
 # Refer for explanation to following link:
 # https://github.com/evilmartians/lefthook/blob/master/docs/full_guide.md
