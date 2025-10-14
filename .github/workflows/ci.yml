@@ -8,11 +8,11 @@ on:
   pull_request:
     branches:
       - main
-    repository_dispatch:
-      types: [contentful_update] #Webhook do Contentful
-    schedule:
-      #atualizar isto depois no fim, antes da entrega
-      - cron: '0 0 * * 1'
+  repository_dispatch:
+    types: [contentful_update] #Webhook do Contentful
+  schedule:
+    #atualizar isto depois no fim, antes da entrega
+    - cron: '0 0 * * 1'
 
 jobs:
   build:
