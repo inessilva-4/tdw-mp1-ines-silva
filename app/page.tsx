@@ -22,6 +22,7 @@ function Intro() {
           className="underline hover:text-success duration-200 transition-colors"
         >
           <h1>Teste</h1>
+          <h2>Teste</h2>
           Next.js
         </a>{' '}
         e{' '}

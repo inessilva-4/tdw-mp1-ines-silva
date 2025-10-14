@@ -76,4 +76,4 @@ jobs:
         run: npm ci
 
       - name: Deploy para Netlify
-        run: npx netlify-cli deploy --site ${{ secrets.SITE_ID }} --auth ${{ secrets.TOKEN_ID }} --prod
+        run: npx netlify-cli deploy --site ${{ secrets.SITE_ID }} --auth ${{ secrets.TOKEN_NET }} --prod
