@@ -21,11 +21,9 @@ function Intro() {
           href="https://nextjs.org/"
           className="underline hover:text-success duration-200 transition-colors"
         >
-          <h1>Teste</h1>
-          <h2>Teste</h2>
-          <h2>Teste 2</h2>
-          <h1>Teste1</h1>
-          <h1>Teste1</h1>
+          <h1>Mini Projeto 1</h1>
+          <h1>Inês Ferreira da Silva</h1>
+          <h1>113260</h1>
           Next.js
         </a>{' '}
         e{' '}
